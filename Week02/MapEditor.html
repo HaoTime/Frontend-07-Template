@@ -35,24 +35,23 @@
                 this.compare = compare || ((a, b) => a - b);
             }
             take() {
-                if (!this.data.length) {
+                let len = this.data.length;
+                if (!len) {
                     return;
                 }
                 let min = this.data[0];
                 let minIndex = 0;
-
-                for (let i = 1; i < this.data.length; i++) {
-                    if (this.compare(this.data[i], min) < 0) {
+                for (let i = 1; i < len; i++) {
+                    if (this.compare(min, this.data[i]) > 0) {
                         min = this.data[i];
                         minIndex = i;
                     }
                 }
-
-                this.data[minIndex] = this.data[this.data.length - 1];
+                this.data[minIndex] = this.data[len - 1];
                 this.data.pop();
                 return min;
-
             }
+
             give(v) {
                 this.data.push(v);
             }
@@ -108,13 +107,14 @@
             let queue = new Sorted([start], (a, b) => distance(a) - distance(b));
 
             async function insert(x, y, pre) {
-                if (x < 0 || x >= 100 || y < 0 || y > 100) {
+                if (x < 0 || x >= 100 || y < 0 || y >= 100) {
                     return;
                 }
 
                 if (table[x + 100 * y]) {
                     return;
                 }
+                await sleep(10);
                 container.children[x + 100 * y].style.backgroundColor = "yellow";
                 table[x + 100 * y] = pre;
                 queue.give([x, y]);
@@ -124,14 +124,14 @@
                 return (point[0] - end[0]) ** 2 + (point[1] - end[1]) ** 2;
             }
 
-            while (queue.length) {
+            while (queue.data.length) {
                 let [x, y] = queue.take();
                 if (end[0] == x && end[1] == y) {
                     let path = [];
                     while (start[0] != x || start[1] != y) {
-                        path.give(map[x + 100 * y]);
+                        path.push(map[x + 100 * y]);
                         [x, y] = table[x + 100 * y];
-
+                        await sleep(10);
                         container.children[x + 100 * y].style.backgroundColor = "red";
                     }
                     return path;
@@ -149,6 +149,7 @@
 
             return null;
         }
+
     </script>
 </body>
 

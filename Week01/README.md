@@ -59,7 +59,7 @@ new Promise((resolve, reject)=>{}).then();
 //generator/yield
 ```
 
-
+  
 ## 学习总结
 
 本周主要两个编程小项目的训练，`三子棋`和`红绿灯`
