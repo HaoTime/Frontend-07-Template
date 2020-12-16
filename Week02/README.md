@@ -116,7 +116,9 @@ console.log(new Square(2).name)//square
 ### 1.行内元素空白间距问题
 
 原因：inline 或 inline-block 下元素间的空格或换行符引起
+
 解决：父级元素设置 `font-size:0;`
+
 扩展：图片间的空白间距也可以用此办法解决
   
   
