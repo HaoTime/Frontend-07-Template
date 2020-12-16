@@ -1,4 +1,4 @@
-## 学习笔记
+## :pushpin:学习笔记
 
 >基础薄弱，每每一个知识点都值得深研下去
 
@@ -60,6 +60,17 @@ new Promise((resolve, reject)=>{}).then();
 ```
 
   
-## 学习总结
+## :trophy:学习总结
 
-本周主要两个编程小项目的训练，`三子棋`和`红绿灯`
+本周主要两个编程小项目的训练：`三子棋`和`红绿灯`
+
+- [x] 三子棋
+- [x] 红绿灯
+  
+
+## :gift_heart:学习交流
+
+![Hao](https://haoer.oss-cn-hangzhou.aliyuncs.com/hao.jpg)
+
+欢迎大家加微信交流 Thanksヾ(✿ﾟ▽ﾟ)ノ
+

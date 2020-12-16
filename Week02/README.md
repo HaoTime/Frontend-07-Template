@@ -1,4 +1,4 @@
-## 学习笔记
+## :pushpin:学习笔记
 
 >无志者长立志，有志者立常志
 
@@ -37,7 +37,7 @@ Array(3).fill(1); //[1,1,1]
 >
 >解决了cookie存储空间不足的问题（每条cookie的存储空间4k）
 
-![localStorage和sessionStorage](localStorage.png)
+![localStorage](https://haotime.oss-cn-hangzhou.aliyuncs.com/Frontend-07-Template/localStorage.png)
 
 ### 4.队列 和 栈
 
@@ -47,11 +47,11 @@ Array(3).fill(1); //[1,1,1]
 
 ### 5.搜索算法
 
->广度优先搜索：用`队列`数据结构
+>广度优先搜索：用 `队列` 数据结构
 >
->深度优先搜索：用`栈`数据结构
+>深度优先搜索：用 `栈` 数据结构
 >
->A*搜索：用`排序`数据结构，能找到最优路径的启发式寻路叫 `A*`，不一定能找到最终的启发式寻路叫 `A`
+>A*搜索：用 `排序` 数据结构，能找到最优路径的启发式寻路叫 `A*`，不一定能找到最终的启发式寻路叫 `A`
 
 ### 6.null 和 object
 
@@ -111,7 +111,7 @@ console.log(new Square(2).name)//square
 ```
   
   
-## 疑难笔记
+## :hourglass:疑难笔记
 
 ### 1.行内元素空白间距问题
 
@@ -120,11 +120,19 @@ console.log(new Square(2).name)//square
 扩展：图片间的空白间距也可以用此办法解决
   
   
-## 学习总结
+## :trophy:学习总结
 
-本周主要两个编程小项目的训练，`寻路`
+本周主要一个编程小项目的训练：`寻路`
 
 涉及 广度优先搜索、异步编程可视化UI、启发式搜索 等
 
-选学：二叉堆?（没学）
+- [x] 寻路
+- [ ] 二叉堆?
+  
+  
+## :gift_heart:学习交流
+
+![Hao](https://haoer.oss-cn-hangzhou.aliyuncs.com/hao.jpg)
+
+欢迎大家加微信交流 Thanksヾ(✿ﾟ▽ﾟ)ノ
 
