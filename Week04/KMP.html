@@ -10,11 +10,11 @@
 <body>
     <script>
         function kmp(source, pattern) {
-            //计算table
+            //计算跳转表格
             let table = new Array(pattern.length).fill(0);
 
             {
-                let i = 1, j = 0;
+                let i = 1, j = 0; //i-表格索引 j-跳转标注
                 while (i < pattern.length) {
                     if (pattern[i] === pattern[j]) {
                         ++j, ++i;
@@ -27,12 +27,13 @@
                         }
                     }
                 }
+                console.log(table);
             }
 
             {
-                let i = 0, j = 0;
+                let i = 0, j = 0; //i-source索引 j-pattern索引
                 while (i < source.length) {
-                    if (pattern[j] === source[i]) {
+                    if (source[i] === pattern[j]) {
                         ++i, ++j;
                     } else {
                         if (j > 0) {
@@ -48,8 +49,7 @@
                 return false;
             }
         }
-
-        console.log(kmp("aabaabaa", "aba"))
+        console.log(kmp("helllo", "lll"));
     </script>
 </body>
 

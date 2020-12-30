@@ -167,17 +167,17 @@ Math.trunc(2.523123) // 2
     2 —— 3 —— 4 —— $  
   
 
-//代码表示
+//伪代码表示
 {
   1: {
     2: {
-      2: {$: 0}
-      3: {$: 0}
+      2: {$: 1}
+      3: {$: 1}
     }
   },
   2: {
     3: {
-      4: {$: 0}
+      4: {$: 1}
     }
   }
   
@@ -191,10 +191,43 @@ Math.trunc(2.523123) // 2
 
 ### 6.KMP
 
-KMP 是字符串的模式匹配算法  
+KMP 是字符串的模式匹配算法，时间复杂度O(m+n)
 
-模式匹配 也就是查一个字符串中有没有另一个字符串
+模式匹配 也就是查一个字符串中有没有另一个短的字符串  
+待查的原串 source串 和 模式串 pattern串    
+
+KMP 本质就是利用已经匹配过的部分字符串，避免从头开始  
+
+KMP算法可分解成两个步骤  
+- 求 pattern串 的跳转表格（next数组）
+- source串 与 pattern串 匹配
   
+用表格的形式表示 pattern串 的自重复   
+上一个字符如果发现重复，当前标注+1 
+
+| a | b | c | d | a | b | c | e |
+| - | - | - | - | - | - | - | - |
+| 0 | 0 | 0 | 0 | 0 | 1 | 2 | 3 |
+
+| a | b | a | b | a | b | c |
+| - | - | - | - | - | - | - |
+| 0 | 0 | 0 | 1 | 2 | 3 | 4 |
+
+| a | a | b | a | a | a | c |
+| - | - | - | - | - | - | - |
+| 0 | 0 | 1 | 0 | 1 | 2 | 2 |
+
+当 source串 与 pattern 匹配时  
+如果 source串 与当前字符不匹配，返回到标注的位置继续匹配 
+
+~~暴力解:Brute-Force(BF)~~  
+~~时间复杂度O(m*n)~~  
+
+**应用**  
+
+- 字符串匹配
+
+
 ### 7.Wildcard
 
 加入两种通配符，由若干个带问号KMP组成
@@ -209,7 +242,7 @@ KMP 是字符串的模式匹配算法
 - [x] Symbol
 - [x] Math
 - [x] 字典树
-- [ ] KMP
+- [x] KMP
 - [ ] Wildcard 
   
   
@@ -219,6 +252,7 @@ KMP 是字符串的模式匹配算法
 - <a href="https://juejin.cn/post/6909492639842697229">[每日一题]ES6中为什么要是用Symbol? - 掘金</a>
 - <a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String">String - MDN</a>
 - <a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Math">Math - MDN</a>
+- <a href="https://leetcode-cn.com/problems/implement-strstr/">28. 实现 strStr() - LeetCode</a>
     
   
 ## :gift_heart:学习交流
