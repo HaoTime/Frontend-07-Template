@@ -24,6 +24,8 @@ document.getELementsByClassName("class");
 
 ```
 
+***
+
 ### 2.循环
 ```javascript
 //无限循环-最佳实践
@@ -38,6 +40,8 @@ continue
 break
 ```
 
+***
+
 ### 3.深拷贝
 ```javascript
 //内置JSON函数
@@ -46,6 +50,8 @@ JSON.parse(JSON.stringify(obj))
 //一维数组
 Object.create(obj)
 ```
+
+***
 
 ### 4.异步编程
 ```javascript

@@ -68,6 +68,8 @@ console.log(Symbol.for("hao")); // Symbol(hao)
 console.log(Symbol.keyFor(sym2)); // "hao"
 ```
 
+***
+
 ### 2.in
 
 >语法：(x in object)  
@@ -83,6 +85,8 @@ let obj = { a: 1, b: 2, c: 3}
 console.log(2 in obj) // false
 console.log(b in obj) // true
 ```
+
+***
 
 ### 3.String 方法
 
@@ -118,6 +122,8 @@ String.fromCharCode(0x2014) // "-"
 "AB".charCodeAt(2)  // NaN
 ```
 
+***
+
 ### 4.Math
 
 >是一个内置对象，
@@ -145,6 +151,8 @@ Math.min(2,1,3) // 1
 Math.random() // 0.5227224445984631
 Math.trunc(2.523123) // 2
 ```
+
+***
 
 ### 5.字典树（Trie）
 
@@ -189,6 +197,8 @@ Math.trunc(2.523123) // 2
 - 大量高重复的字符串存储
 - 重复次数最多、最小或特定的字符串
 
+***
+
 ### 6.KMP
 
 KMP 是字符串的模式匹配算法，时间复杂度O(m+n)
@@ -227,11 +237,25 @@ KMP算法可分解成两个步骤
 
 - 字符串匹配
 
+***
 
 ### 7.Wildcard
 
-加入两种通配符，由若干个带问号KMP组成
-  
+加入两种通配符，由若干个带问号KMP组成  
+
+- `*` 匹配多个字符
+- `?` 匹配一个字符
+
+待查的原串 source串 和 模式串 pattern串    
+
+**实现**  
+
+先通过 pattern串 的 `*` ，将 pattern串 分成若干个短字符串  
+
+将短字符串中的 `?` 替换成 正则表达式 `[\\s\\S]`   
+
+通过正则表达式 `exec()` 方法分别与 source串 匹配  
+
   
 ## :trophy:学习总结
 
@@ -243,7 +267,7 @@ KMP算法可分解成两个步骤
 - [x] Math
 - [x] 字典树
 - [x] KMP
-- [ ] Wildcard 
+- [x] Wildcard 
   
   
 ## :sunflower:资料参考

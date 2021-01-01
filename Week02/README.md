@@ -16,6 +16,8 @@
 Array(3).fill(1); //[1,1,1]
 ```
 
+***
+
 ### 2.鼠标event
 
 1. mousemove 
@@ -29,6 +31,8 @@ Array(3).fill(1); //[1,1,1]
    - 右键弹出菜单事件
    - e.preventDefault() //阻止
 
+***
+
 ### 3.localStorage
 
 >html5 新增特性，localStorage 和 sessionStorage
@@ -39,11 +43,15 @@ Array(3).fill(1); //[1,1,1]
 
 ![localStorage](https://haotime.oss-cn-hangzhou.aliyuncs.com/Frontend-07-Template/localStorage.png)
 
+***
+
 ### 4.队列 和 栈
 
 >队列：先进先出，用 `push` 和 `shift`
 >
 >栈：先进后出，用 `push` 和 `pop`
+
+***
 
 ### 5.搜索算法
 
@@ -52,6 +60,8 @@ Array(3).fill(1); //[1,1,1]
 >深度优先搜索：用 `栈` 数据结构
 >
 >A*搜索：用 `排序` 数据结构，能找到最优路径的启发式寻路叫 `A*`，不一定能找到最终的启发式寻路叫 `A`
+
+***
 
 ### 6.null 和 object
 
@@ -73,10 +83,14 @@ Array(3).fill(1); //[1,1,1]
    - 用于检测构造函数的 `prototype` 属性是否出现在某个实例对象的原型上
    - function C() {}; var o = new C(); console.log(o instanceof C); //true  
 
+***
+
 ### 7.乘方运算法 `**`
 ```javascript
 2**3 //8
 ```
+
+***
 
 ### 8.class声明
 
