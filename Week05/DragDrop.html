@@ -8,8 +8,17 @@
 </head>
 
 <body>
-    <div></div>
-    <div id="dragable" style="width: 100px; height: 100px; background-color: aqua;"></div>
+    <div id="container">
+        Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao
+        Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao
+        Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao
+        Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao
+        Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao
+        Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao
+        Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao
+        Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao Hao
+    </div>
+    <div id="dragable" style="display:inline-block; width: 100px; height: 100px; background-color: aqua;"></div>
     <script>
         let dragable = document.getElementById("dragable");
         let baseX = 0, baseY = 0;
@@ -22,11 +31,43 @@
                 document.removeEventListener("mousemove", move);
             }
             let move = event => {
-                dragable.style.transform = `translate(${baseX + event.clientX - startX}px, ${baseY + event.clientY - startY}px)`
+                let range = getNearest(event.clientX, event.clientY);
+                range.insertNode(dragable);
+                // dragable.style.transform = `translate(${baseX + event.clientX - startX}px, ${baseY + event.clientY - startY}px)`
             }
             document.addEventListener("mouseup", up);
             document.addEventListener("mousemove", move);
         })
+
+        let container = document.getElementById("container");
+
+        let ranges = [];
+
+        for (let i = 0; i < container.childNodes[0].textContent.length; i++) {
+            let range = document.createRange();
+            range.setStart(container.childNodes[0], i);
+            range.setEnd(container.childNodes[0], i);
+            ranges.push(range);
+            console.log(range.getBoundingClientRect());
+        }
+
+        //获取离该点最近的range
+        function getNearest(x, y) {
+            let min = Infinity;
+            let nearest = null;
+            for (let range of ranges) {
+                let reac = range.getBoundingClientRect();
+                let distance = (reac.x - x) ** 2 + (reac.y - y) ** 2;
+                if (distance < min) {
+                    min = distance;
+                    nearest = range;
+                }
+            }
+            return nearest;
+        }
+
+        //禁用选中
+        document.addEventListener("selectstart", event => event.preventDefault());
     </script>
 </body>
 
