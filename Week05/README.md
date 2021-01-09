@@ -195,6 +195,13 @@ range.insertNode(newNode);
 - `Element.addEventListener(event, function)` 监听
 - `Element.removeEventListener(event, function)` 移除
 
+***
+
+### 8.单元测试
+
+- Mocha
+- Jest
+
 
 ## :hourglass:疑难笔记
 
