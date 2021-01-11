@@ -1,6 +1,27 @@
-## :pushpin:学习笔记
+# 第2周：编程与算法练习
 
 >无志者长立志，有志者立常志
+
+<!-- TOC -->
+
+- [第2周：编程与算法练习](#第2周编程与算法练习)
+  - [:lollipop:知识点点](#lollipop知识点点)
+    - [1.fill()](#1fill)
+    - [2.鼠标event](#2鼠标event)
+    - [3.localStorage](#3localstorage)
+    - [4.队列 和 栈](#4队列-和-栈)
+    - [5.搜索算法](#5搜索算法)
+    - [6.null 和 object](#6null-和-object)
+    - [7.乘方运算法 `**`](#7乘方运算法-)
+    - [8.class声明](#8class声明)
+  - [:hourglass:疑难笔记](#hourglass疑难笔记)
+    - [1.行内元素空白间距问题](#1行内元素空白间距问题)
+  - [:trophy:学习总结](#trophy学习总结)
+  - [:gift_heart:学习交流](#gift_heart学习交流)
+
+<!-- /TOC -->
+
+## :lollipop:知识点点
 
 ### 1.fill()
 

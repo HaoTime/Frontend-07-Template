@@ -1,6 +1,30 @@
-## :pushpin:学习笔记
+# 第4周：编程与算法练习
 
->一遍看不懂看两遍，两遍看不懂看三遍，总会懂得:rainbow::rainbow::rainbow:  
+>一遍看不懂看两遍，两遍看不懂看三遍，总会懂得:rainbow::rainbow::rainbow: 
+
+<!-- TOC -->
+
+- [第4周：编程与算法练习](#第4周编程与算法练习)
+  - [:lollipop:知识点点](#lollipop知识点点)
+    - [1.Symbol](#1symbol)
+      - [1.1.特性](#11特性)
+      - [1.2.方法](#12方法)
+    - [2.in](#2in)
+    - [3.String 方法](#3string-方法)
+      - [3.1.fromCharCode](#31fromcharcode)
+      - [3.2.charCodeAt](#32charcodeat)
+    - [4.Math](#4math)
+      - [4.1.方法](#41方法)
+    - [5.字典树（Trie）](#5字典树trie)
+    - [6.KMP](#6kmp)
+    - [7.Wildcard](#7wildcard)
+  - [:trophy:学习总结](#trophy学习总结)
+  - [:sunflower:资料参考](#sunflower资料参考)
+  - [:gift_heart:学习交流](#gift_heart学习交流)
+
+<!-- /TOC -->
+
+## :lollipop:知识点点 
 
 | 字符串分析算法 | 特点 |
 | ---- | ---- |

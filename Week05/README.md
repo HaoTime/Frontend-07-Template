@@ -1,6 +1,33 @@
-## :lollipop:知识点
+# 第5周：编程与算法练习
 
 >`Reactive实现`没太听明白:dizzy_face::dizzy_face::dizzy_face:
+
+<!-- TOC -->
+
+- [第5周：编程与算法练习](#第5周编程与算法练习)
+  - [:lollipop:知识点点](#lollipop知识点点)
+    - [1.Proxy](#1proxy)
+    - [2.Object.defineProperty()](#2objectdefineproperty)
+    - [3.Vue响应式实现](#3vue响应式实现)
+    - [4.DOM操作](#4dom操作)
+    - [5.Range](#5range)
+      - [5.1.创建对象](#51创建对象)
+      - [5.2.方法](#52方法)
+    - [6.Infinity](#6infinity)
+    - [7.Event](#7event)
+      - [7.1.类型](#71类型)
+      - [7.2.常用方法](#72常用方法)
+      - [7.3.监听/移除](#73监听移除)
+    - [8.单元测试](#8单元测试)
+  - [:hourglass:疑难笔记](#hourglass疑难笔记)
+    - [1.监听 mousemove、mouseup](#1监听-mousemovemouseup)
+  - [:trophy:学习总结](#trophy学习总结)
+  - [:sunflower:资料参考](#sunflower资料参考)
+  - [:gift_heart:学习交流](#gift_heart学习交流)
+
+<!-- /TOC -->
+
+## :lollipop:知识点点
 
 ### 1.Proxy
 
