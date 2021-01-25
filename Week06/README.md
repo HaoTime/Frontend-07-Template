@@ -33,9 +33,9 @@
       - [6.6.Function Object](#66function-object)
       - [6.7.Host Object](#67host-object)
   - [:hourglass:疑难笔记](#hourglass疑难笔记)
-    - [1.用 UTF8 对 string 进行遍码](#1用-utf8-对-string-进行遍码)
-    - [2.用 JavaScript 去设计狗咬人的代码](#2用-javascript-去设计狗咬人的代码)
-    - [3.JavaScript 标准里面所有具有特殊行为的对象](#3javascript-标准里面所有具有特殊行为的对象)
+      - [1.用 UTF8 对 string 进行遍码](#1用-utf8-对-string-进行遍码)
+      - [2.用 JavaScript 去设计狗咬人的代码](#2用-javascript-去设计狗咬人的代码)
+      - [3.JavaScript 标准里面所有具有特殊行为的对象](#3javascript-标准里面所有具有特殊行为的对象)
   - [:trophy:学习总结](#trophy学习总结)
   - [:sunflower:资料参考](#sunflower资料参考)
   - [:gift_heart:学习交流](#gift_heart学习交流)
@@ -422,11 +422,11 @@ JavaScript 中 特殊的对象，比如函数对象
 
 ## :hourglass:疑难笔记
 
-### 1.用 UTF8 对 string 进行遍码
+#### 1.用 UTF8 对 string 进行遍码
 
-### 2.用 JavaScript 去设计狗咬人的代码
+#### 2.用 JavaScript 去设计狗咬人的代码
 
-### 3.JavaScript 标准里面所有具有特殊行为的对象
+#### 3.JavaScript 标准里面所有具有特殊行为的对象
 
 
 ## :trophy:学习总结
