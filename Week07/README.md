@@ -1,10 +1,10 @@
-# 第6周：重学Javascript(一)
+# 第7周：重学Javascript(二)
 
 >边看边忘:dog::dog::dog:
 
 <!-- TOC -->
 
-- [第6周：重学Javascript(一)](#第6周重学javascript一)
+- [第7周：重学Javascript(二)](#第7周重学javascript二)
   - [:lollipop:知识点点](#lollipop知识点点)
     - [1.Expression（表达式）](#1expression表达式)
       - [1.1.Operator](#11operator)
